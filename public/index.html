@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Model Tracker</title>
+  <!-- Tailwind CSS via CDN for modern styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js via CDN for interactive charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <div class="max-w-7xl mx-auto px-6 py-10">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-2">AI Model Tracker</h1>
+      <p class="text-lg text-gray-600">Dynamic dashboard of language and generative model releases.  Data is fetched from a single JSON file so this page stays up‑to‑date without manual editing.</p>
+    </header>
+
+    <!-- Timeline Section -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Release Timeline</h2>
+      <div id="timeline" class="space-y-8">
+        <!-- Timeline entries will be injected here by script.js -->
+      </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">SWE‑bench Verified Scores</h2>
+      <div class="bg-white p-4 rounded shadow">
+        <canvas id="sweChart" height="320"></canvas>
+      </div>
+    </section>
+
+    <!-- Table Section -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Model Summary</h2>
+      <div class="overflow-x-auto bg-white rounded shadow">
+        <table class="min-w-full divide-y divide-gray-200" id="models-table">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">Model</th>
+              <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">Provider</th>
+              <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">Release Date</th>
+              <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">Modality</th>
+              <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">SWE‑bench</th>
+              <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">Notes</th>
+            </tr>
+          </thead>
+          <tbody id="models-table-body" class="divide-y divide-gray-200 text-sm">
+            <!-- Table rows will be injected here by script.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="text-center text-sm text-gray-500">
+      <p>Last updated automatically from models.json</p>
+    </footer>
+  </div>
+
+  <!-- Client‑side script that fetches JSON and renders timeline, chart, and table -->
+  <script src="script.js"></script>
+</body>
+</html>

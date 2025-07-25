@@ -1,0 +1,1053 @@
+[
+  {
+    "model_name": "DeepSeek R1",
+    "provider": "DeepSeek",
+    "release_date": "2025-01-20",
+    "modality": "language",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "reasoning",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": 0.0,
+      "output_per_million_tokens": 0.0
+    },
+    "notes": "Open-source reasoning model that shows chain-of-thought; matches or surpasses ChatGPT-4 and Claude 3.5 Sonnet on math and coding benchmarks.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Grok 3",
+    "provider": "xAI",
+    "release_date": "2025-02-17",
+    "modality": "language",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "hybrid reasoning",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": 79.4,
+      "aime_2025": 99.3,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {},
+    "notes": "Base and mini versions; dual modes (Think & DeepSearch) enabling extra computation for reasoning and research tasks.",
+    "community_comments": []
+  },
+  {
+    "model_name": "DeepSeek V3 0324",
+    "provider": "DeepSeek",
+    "release_date": "2025-03-25",
+    "modality": "language",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "language",
+    "performance": {},
+    "price": {},
+    "notes": "Updated checkpoint of DeepSeek V3 with boosted reasoning performance, stronger front-end development skills and smarter tool use.",
+    "community_comments": []
+  },
+  {
+    "model_name": "CassetteAI Music Generator",
+    "provider": "CassetteAI (via fal.ai)",
+    "release_date": "2025-03-27",
+    "modality": "audio",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "audio generation",
+    "performance": {},
+    "price": {},
+    "notes": "Generates 30-second samples in under 2 seconds and full tracks in under 10 seconds across genres; captures moods.",
+    "community_comments": []
+  },
+  {
+    "model_name": "CassetteAI Sound Effects Generator",
+    "provider": "CassetteAI (via fal.ai)",
+    "release_date": "2025-03-27",
+    "modality": "audio",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "audio generation",
+    "performance": {},
+    "price": {},
+    "notes": "Produces up to 30-second sound effects in one second; covers a wide range of sound categories.",
+    "community_comments": []
+  },
+  {
+    "model_name": "MiniMax Text-to-Speech (speech-02-hd, speech-02-turbo, etc.)",
+    "provider": "MiniMax (via fal.ai)",
+    "release_date": "2025-03-31",
+    "modality": "audio",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "TTS",
+    "performance": {},
+    "price": {},
+    "notes": "Streaming TTS models supporting 5,000 characters real-time or 1M asynchronous, 30+ languages, 300+ voices, unlimited voice cloning.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Quasar Alpha",
+    "provider": "OpenRouter",
+    "release_date": "2025-04-03",
+    "modality": "language",
+    "context_window": 1000000,
+    "parameters": null,
+    "model_type": "coding / long-context",
+    "performance": {},
+    "price": {},
+    "notes": "Preview foundation model with 1M-token context window optimized for coding and reasoning, available for free during preview.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Optimus Alpha",
+    "provider": "OpenRouter",
+    "release_date": "2025-04-10",
+    "modality": "language",
+    "context_window": 1000000,
+    "parameters": null,
+    "model_type": "coding / long-context",
+    "performance": {},
+    "price": {},
+    "notes": "Preview foundation model with 1M-token context window; general-purpose tasks and coding; free during sneak peek.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Finegrain Eraser",
+    "provider": "fal.ai",
+    "release_date": "2025-04-09",
+    "modality": "image editing",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "image editing",
+    "performance": {},
+    "price": {},
+    "notes": "Removes specified objects and their shadows/reflections using natural-language instructions.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Kling 2.0",
+    "provider": "fal.ai",
+    "release_date": "2025-04-15",
+    "modality": "video",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "text-to-video / image-to-video",
+    "performance": {},
+    "price": {},
+    "notes": "Improved motion quality, lifelike characters, extended video up to 10 s, and dynamic camera control.",
+    "community_comments": []
+  },
+  {
+    "model_name": "FASHN Try-On v1.5",
+    "provider": "fal.ai",
+    "release_date": "2025-04-21",
+    "modality": "image",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "fashion try-on",
+    "performance": {},
+    "price": {},
+    "notes": "Segmentation-free processing for realistic garment fit; improves support for loose clothing and identity preservation; faster inference.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Hummingbird-0 Lipsync",
+    "provider": "Tavus (via fal.ai)",
+    "release_date": "2025-04-24",
+    "modality": "video",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "lip-sync",
+    "performance": {},
+    "price": {},
+    "notes": "Zero-shot lipsync model for videos up to 5 minutes, with quick generation and high accuracy; not ideal for stylised content.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Llama 4 Scout",
+    "provider": "Meta",
+    "release_date": "2025-04-05",
+    "modality": "language",
+    "context_window": 10000000,
+    "parameters": "17B active, 16 experts",
+    "model_type": "multimodal",
+    "performance": {},
+    "price": {},
+    "notes": "Open-weight model with 10M-token context window; mixture-of-experts architecture; targeted at frontier research.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Llama 4 Maverick",
+    "provider": "Meta",
+    "release_date": "2025-04-05",
+    "modality": "language",
+    "context_window": null,
+    "parameters": "17B active, 128 experts",
+    "model_type": "multimodal",
+    "performance": {},
+    "price": {},
+    "notes": "Mixture-of-experts model claimed to beat GPT-4o and Gemini 2.0 Flash on reasoning and coding benchmarks.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Solar Pro 2",
+    "provider": "Upstage AI",
+    "release_date": "2025-04-??",
+    "modality": "language",
+    "context_window": null,
+    "parameters": "31B",
+    "model_type": "hybrid reasoning",
+    "performance": {},
+    "price": {
+      "input_per_million_tokens": 0.0,
+      "output_per_million_tokens": 0.0
+    },
+    "notes": "South-Korean frontier model with hybrid reasoning mode; claimed to rival larger models; specifics unavailable due to source limitations.",
+    "community_comments": []
+  },
+  {
+    "model_name": "GPT-4.1",
+    "provider": "OpenAI",
+    "release_date": "2025-04-14",
+    "modality": "language",
+    "context_window": 1000000,
+    "parameters": null,
+    "model_type": "coding / multimodal",
+    "performance": {
+      "swe_bench_verified": 53.0,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": 2.0,
+      "output_per_million_tokens": 8.0
+    },
+    "notes": "Family of models (full, mini, nano) with 1M-token context; supports text, image and audio; tool use; 32k output tokens; emphasises coding and reasoning.",
+    "community_comments": []
+  },
+  {
+    "model_name": "o4-mini",
+    "provider": "OpenAI",
+    "release_date": "2025-04-16",
+    "modality": "language",
+    "context_window": 200000,
+    "parameters": null,
+    "model_type": "STEM / multimodal",
+    "performance": {
+      "swe_bench_verified": 33.4,
+      "livecodebench": 44.7,
+      "aime_2025": 92.7,
+      "math500": 94.2,
+      "mmlu": 0.832,
+      "intelligence_index": 70,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": 1.1,
+      "output_per_million_tokens": 4.4
+    },
+    "notes": "Compact model accessible to all ChatGPT users; supports text and image inputs; high-tier variant 'o4-mini-high' improves accuracy and speed.",
+    "community_comments": [
+      "Great at agentic workflows and visual reasoning, e.g., planning and picking books from a photo\u3010361823660620654\u2020L114-L117\u3011",
+      "Many users find o4-mini unusable for coding, reporting hallucinations and code truncation\u3010436645206021484\u2020L90-L160\u3011",
+      "Compared to ChatGPT 4o, o4-mini excels in coding, math and problem solving, while 4o is better for general queries\u3010980350273475008\u2020L90-L94\u3011"
+    ]
+  },
+  {
+    "model_name": "Mistral Medium 3",
+    "provider": "Mistral AI",
+    "release_date": "2025-05-07",
+    "modality": "language",
+    "context_window": 128000,
+    "parameters": null,
+    "model_type": "language",
+    "performance": {},
+    "price": {
+      "input_per_million_tokens": 0.4,
+      "output_per_million_tokens": 2.0
+    },
+    "notes": "Frontier model delivering ~90% of Claude 3.7 Sonnet performance at one-eighth of the cost; outperforms Llama 4 Maverick and Cohere Command A on many benchmarks.",
+    "community_comments": []
+  },
+  {
+    "model_name": "PixVerse v4.5",
+    "provider": "fal.ai",
+    "release_date": "2025-05-16",
+    "modality": "video",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "video generation",
+    "performance": {},
+    "price": {},
+    "notes": "Improved video generation with enhanced facial consistency, accelerated motion, better camera control and more realistic physics.",
+    "community_comments": []
+  },
+  {
+    "model_name": "FLUX.1 Kontext",
+    "provider": "fal.ai",
+    "release_date": "2025-05-29",
+    "modality": "image editing",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "multimodal editing",
+    "performance": {},
+    "price": {},
+    "notes": "Local image editing with character consistency and style-reference support; available in Pro, Max and Dev versions.",
+    "community_comments": []
+  },
+  {
+    "model_name": "DeepSeek R1 0528",
+    "provider": "DeepSeek",
+    "release_date": "2025-05-28",
+    "modality": "language",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "reasoning",
+    "performance": {},
+    "price": {},
+    "notes": "Improved version of DeepSeek R1 with better benchmarks, reduced hallucinations and added JSON and function-calling support.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Magistral Medium",
+    "provider": "Mistral AI",
+    "release_date": "2025-06-10",
+    "modality": "language",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "reasoning",
+    "performance": {
+      "aime_2024": 73.6,
+      "aime_2024_majority_voting": 90.0
+    },
+    "price": {},
+    "notes": "Reasoning model with step-by-step reasoning and multilingual support; flash answers provide 10x speed; underperforms Gemini 2.5 Pro and Claude Opus 4 on GPQA and AIME benchmarks.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Magistral Small",
+    "provider": "Mistral AI",
+    "release_date": "2025-06-10",
+    "modality": "language",
+    "context_window": null,
+    "parameters": "24B",
+    "model_type": "reasoning (open weights)",
+    "performance": {
+      "aime_2024": 70.7
+    },
+    "price": {},
+    "notes": "Open-weight reasoning model; provides step-by-step reasoning; can be self-hosted; lower performance than Medium.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Gemini 2.5 Pro",
+    "provider": "Google DeepMind",
+    "release_date": "2025-03-25",
+    "modality": "multimodal",
+    "context_window": 1000000,
+    "parameters": null,
+    "model_type": "reasoning",
+    "performance": {
+      "swe_bench_verified": 63.8,
+      "livecodebench": 70.4,
+      "aime_2025": 86.7,
+      "math500": null,
+      "mmlu": null,
+      "humanity_last_exam": 18.8,
+      "gpqa": 84.0,
+      "aider_polyglot": 76.5
+    },
+    "price": {
+      "input_per_million_tokens": 2.5,
+      "output_per_million_tokens": 15.0
+    },
+    "notes": "Thinking model with 1M-token context; supports text, images, audio and video; deep-think mode; top performer on GPQA and math benchmarks.",
+    "community_comments": [
+      "Some users report that Gemini 2.5 Pro\u2019s Flash variant produces better answers and that Pro has regressed in creative writing\u3010408757592562249\u2020L44-L48\u3011.",
+      "Other users call Gemini 2.5 Pro the best model for coding and research, noting it solved problems other models couldn\u2019t\u3010122876173314824\u2020L138-L142\u3011."
+    ]
+  },
+  {
+    "model_name": "VEED Avatar Video Models",
+    "provider": "VEED (via fal.ai)",
+    "release_date": "2025-06-20",
+    "modality": "video",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "avatar video generation",
+    "performance": {},
+    "price": {},
+    "notes": "Suite of text-to-video, audio-to-video and lip-sync models with high realism and professional quality; allows users to choose avatars and generate talking-head videos.",
+    "community_comments": []
+  },
+  {
+    "model_name": "FLUX.1 Kontext Dev",
+    "provider": "fal.ai",
+    "release_date": "2025-06-26",
+    "modality": "image editing",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "image editing (open weights)",
+    "performance": {},
+    "price": {
+      "per_megapixel": 0.025
+    },
+    "notes": "Developer-focused version of FLUX.1 Kontext with open weights, fast inference (~2 s) and LoRA training support.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Veo 3",
+    "provider": "Google DeepMind (via fal.ai)",
+    "release_date": "2025-06-05",
+    "modality": "video",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "video generation",
+    "performance": {},
+    "price": {},
+    "notes": "State-of-the-art video generation model with integrated speech and audio, environmental storytelling, realistic physics and cinematic control.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Resemble AI Voice Models",
+    "provider": "Resemble AI (via fal.ai)",
+    "release_date": "2025-06-02",
+    "modality": "audio",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "TTS / voice cloning",
+    "performance": {},
+    "price": {},
+    "notes": "Real-time high-fidelity TTS and voice-cloning models with zero-shot cloning, emotion control and voice conversion; available at different sampling rates (24kHz, 48kHz).",
+    "community_comments": []
+  },
+  {
+    "model_name": "Bria 3.2",
+    "provider": "Bria (via fal.ai)",
+    "release_date": "2025-07-22",
+    "modality": "image",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "text-to-image",
+    "performance": {},
+    "price": {},
+    "notes": "Text-to-image model trained on licensed data with strong text/logo rendering; optimised for cloud, edge and local deployment.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Video Background Removal",
+    "provider": "Bria (via fal.ai)",
+    "release_date": "2025-07-22",
+    "modality": "video",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "video editing",
+    "performance": {},
+    "price": {},
+    "notes": "Instantly removes backgrounds from videos while maintaining brand consistency and legal compliance.",
+    "community_comments": []
+  },
+  {
+    "model_name": "LTXV 0.9.8",
+    "provider": "Lightricks (via fal.ai)",
+    "release_date": "2025-07-17",
+    "modality": "video",
+    "context_window": null,
+    "parameters": "13B (DiT)",
+    "model_type": "video generation",
+    "performance": {},
+    "price": {},
+    "notes": "Long-form video generation up to 8\u00d7 longer than industry standard; LoRA-based controls; high resolution; 30\u00d7 faster inference and continuous control LoRAs.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Claude Opus 4",
+    "provider": "Anthropic",
+    "release_date": "2025-05-22",
+    "modality": "language",
+    "context_window": 200000,
+    "parameters": null,
+    "model_type": "hybrid reasoning",
+    "performance": {
+      "swe_bench_verified": 72.5,
+      "terminal_bench": 43.2
+    },
+    "price": {
+      "input_per_million_tokens": 15.0,
+      "output_per_million_tokens": 75.0
+    },
+    "notes": "World\u2019s best coding model with sustained multi-hour agentic performance; supports extended thinking and tool use; improved memory via local files.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Claude Sonnet 4",
+    "provider": "Anthropic",
+    "release_date": "2025-05-22",
+    "modality": "language",
+    "context_window": 200000,
+    "parameters": null,
+    "model_type": "hybrid reasoning",
+    "performance": {
+      "swe_bench_verified": 72.7
+    },
+    "price": {
+      "input_per_million_tokens": 3.0,
+      "output_per_million_tokens": 15.0
+    },
+    "notes": "Balanced model offering near-instant or extended reasoning; excels at coding and reasoning while maintaining lower cost than Opus 4.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Kimi K2",
+    "provider": "Moonshot AI",
+    "release_date": "2025-07-11",
+    "modality": "language",
+    "context_window": null,
+    "parameters": "1T total, 32B active",
+    "model_type": "agentic MoE",
+    "performance": {
+      "swe_bench_verified": 65.8,
+      "livecodebench": 53.7,
+      "math500": 97.4
+    },
+    "price": {
+      "input_per_million_tokens": 0.15,
+      "output_per_million_tokens": 2.5
+    },
+    "notes": "Trillion-parameter mixture-of-experts model optimised for agentic workflows; open-sourced; strong performance on SWE-bench and math benchmarks.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Grok 4",
+    "provider": "xAI",
+    "release_date": "2025-07-22",
+    "modality": "language",
+    "context_window": 256000,
+    "parameters": null,
+    "model_type": "hybrid reasoning",
+    "performance": {
+      "humanity_last_exam": 50.0,
+      "mmlu": 0.866,
+      "intelligence_index": 73,
+      "speed_tokens_per_second": 51.4
+    },
+    "price": {
+      "input_per_million_tokens": 6.0,
+      "output_per_million_tokens": 6.0
+    },
+    "notes": "Grok 4 and Grok 4 Heavy introduce continuous reinforcement learning and native tool use; outperform Claude Opus 4 and Gemini 2.5 Pro on LiveCodeBench and math competitions.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Nova Premier",
+    "provider": "Amazon",
+    "release_date": "2025-04-30",
+    "modality": "multimodal",
+    "context_window": 1000000,
+    "parameters": null,
+    "model_type": "general-purpose",
+    "performance": {
+      "swe_bench_verified": null,
+      "gpqa": null,
+      "simpleqa": "strong"
+    },
+    "price": {
+      "input_per_million_tokens": 2.5,
+      "output_per_million_tokens": 12.5
+    },
+    "notes": "Amazon\u2019s most capable model for complex tasks; processes text, images and videos; excels at knowledge retrieval and visual understanding but lags competitors on math and coding benchmarks.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Mistral Magistral 1.1 (Medium update)",
+    "provider": "Mistral AI",
+    "release_date": "2025-07-??",
+    "modality": "language",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "reasoning update",
+    "performance": {},
+    "price": {},
+    "notes": "July update to Magistral Medium improving reasoning accuracy; details undisclosed.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Mistral Devstral Medium",
+    "provider": "Mistral AI",
+    "release_date": "2025-07-??",
+    "modality": "language",
+    "context_window": null,
+    "parameters": null,
+    "model_type": "code exploration",
+    "performance": {},
+    "price": {},
+    "notes": "Model oriented toward developer productivity and code exploration; described but not benchmarked.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Qwen3 235B",
+    "provider": "Qwen (Alibaba)",
+    "release_date": "2025-04-28",
+    "modality": "language",
+    "context_window": null,
+    "parameters": "235B total, mixture-of-experts",
+    "model_type": "hybrid reasoning",
+    "performance": {
+      "average_accuracy": 80.0,
+      "math500": 94.6,
+      "aime_2025": 84.0,
+      "livecodebench": 70.6,
+      "swe_bench_verified": null
+    },
+    "price": {
+      "input_per_million_tokens": 0.22,
+      "output_per_million_tokens": 0.88
+    },
+    "notes": "Open-weight MoE model supporting 119 languages; dual thinking and non-thinking modes; high performance on coding and math benchmarks.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Qwen3-Coder-480B-A35B-Instruct",
+    "provider": "Qwen (Alibaba)",
+    "release_date": "2025-07-01",
+    "modality": "language",
+    "context_window": "256k",
+    "parameters": "480B total, 35B active (MoE)",
+    "model_type": "code model",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": 0.45,
+      "output_per_million_tokens": 1.8
+    },
+    "notes": "Mixture-of-Experts code model optimised for agentic coding tasks and tool use; supports long-context (256k) and is priced $0.45 input/$1.8 output per million tokens. Open-weight variant available on Fireworks AI.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Qwen3-235B-A22B-Thinking-2507",
+    "provider": "Qwen (Alibaba)",
+    "release_date": "2025-06-27",
+    "modality": "language",
+    "context_window": "256k",
+    "parameters": "235B total, 22B active (MoE with 128 experts, 8 active)",
+    "model_type": "reasoning",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": 74.1,
+      "aime_2025": 92.3,
+      "math500": null,
+      "mmlu": 84.4,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": 81.1
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Open-source reasoning model with a specialized 'thinking' mode using <think> tags to reveal reasoning; demonstrates high performance on MMLU-Pro (84.4), GPQA (81.1), AIME25 (92.3), LiveCodeBench (74.1). 256k context, dynamic mixture-of-experts.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Qwen3-235B-A22B-Instruct-2507",
+    "provider": "Qwen (Alibaba)",
+    "release_date": "2025-06-27",
+    "modality": "language",
+    "context_window": "256k",
+    "parameters": "235B total, 22B active (MoE)",
+    "model_type": "instruction-following",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Non-thinking variant of the Qwen3-235B-A22B model; released under Apache 2 license. Requires large VRAM; includes FP8 quantized version for efficient deployment. Claims to outperform Claude 4 Opus on non-thinking tests.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Luma Ray2",
+    "provider": "Luma (via fal.ai)",
+    "release_date": "2025-01-15",
+    "modality": "video",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Next-generation text-to-video model generating 5\u201310 second clips with natural motion and improved physics; trained with 10\u00d7 more compute than its predecessor. Fal integration offers $0.50 per 5-second 540p video and a faster Ray2 Flash variant at $0.20 per 5-second video.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Ideogram 3.0",
+    "provider": "Ideogram AI",
+    "release_date": "2025-03-26",
+    "modality": "image",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Text-to-image model adding style references, improved realism and 92% text rendering accuracy; generation ~40% faster than prior version; subscription available at $48/month for commercial use.",
+    "community_comments": []
+  },
+  {
+    "model_name": "MiniMax TTS Streaming Models",
+    "provider": "MiniMax (via fal.ai)",
+    "release_date": "2025-03-31",
+    "modality": "audio",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Real-time streaming text-to-speech models supporting 5,000 characters in real time or 1 million asynchronously; 30+ languages and 300+ voices; unlimited voice cloning. Pricing around $0.05 per 1000 characters.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Lipsync 2.0",
+    "provider": "Sync Labs (via fal.ai)",
+    "release_date": "2025-04-04",
+    "modality": "video",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Zero-shot video-to-video lipsync model preserving a speaker\u2019s style across live-action, animated and AI-generated faces; includes active speaker detection and temperature control.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Hummingbird-0",
+    "provider": "Tavus (via fal.ai)",
+    "release_date": "2025-04-24",
+    "modality": "video",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Zero-shot lip-sync model generating 10-second videos in about a minute; targeted at film studios and marketing.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Seedream 3.0",
+    "provider": "ByteDance",
+    "release_date": "2025-05-05",
+    "modality": "image",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "High-resolution text-to-image model delivering native 2K images with enhanced aesthetics and small-text accuracy; generates images in ~3 seconds; fal.ai price about $0.03 per image.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Gemini 2.0 Flash (image generation)",
+    "provider": "Google",
+    "release_date": "2025-05-07",
+    "modality": "image",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Adds image generation to Gemini Flash; produces 1024\u00d71024 images with improved text rendering; priced around $0.039 per image.",
+    "community_comments": []
+  },
+  {
+    "model_name": "FLUX Kontext (pro/max)",
+    "provider": "Black Forest Labs (via fal.ai)",
+    "release_date": "2025-05-20",
+    "modality": "image editing",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Multimodal image-editing models that preserve character consistency and allow local edits and style references; available in Pro and Max versions; priced per megapixel with advanced features like LoRA and ControlNet integration.",
+    "community_comments": []
+  },
+  {
+    "model_name": "FLUX 1.1 pro ultra",
+    "provider": "Black Forest Labs (via fal.ai)",
+    "release_date": "2025-05-24",
+    "modality": "image",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "High-resolution text-to-image variant producing 2K images with improved photorealism; priced at about $0.06 per image.",
+    "community_comments": []
+  },
+  {
+    "model_name": "VEED Avatar Models",
+    "provider": "VEED (via fal.ai)",
+    "release_date": "2025-06-20",
+    "modality": "video",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Suite of avatar-driven video models for text-to-video, audio-to-video and lip-sync; produces professional talking-head videos; priced about $0.35 per minute.",
+    "community_comments": []
+  },
+  {
+    "model_name": "FLUX Kontext [dev]",
+    "provider": "Black Forest Labs (via fal.ai)",
+    "release_date": "2025-06-26",
+    "modality": "image editing",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Developer-oriented version of FLUX Kontext featuring open weights, fast inference (~2 seconds vs 7 seconds) and LoRA training support; priced around $0.025 per megapixel.",
+    "community_comments": []
+  },
+  {
+    "model_name": "Bria Video Background Removal",
+    "provider": "Bria (via fal.ai)",
+    "release_date": "2025-07-22",
+    "modality": "video",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Video-to-video model that instantly removes backgrounds from videos, preserving subject and producing commercial-safe outputs; priced about $0.14 per video second.",
+    "community_comments": []
+  },
+  {
+    "model_name": "MiniMax Hailuo-02",
+    "provider": "MiniMax (via fal.ai)",
+    "release_date": "2025-07-22",
+    "modality": "video",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "Second-generation image-to-video and text-to-video model delivering 768p videos with improved physics using noise-aware compute redistribution; priced roughly $0.045 per second (\u2248$0.27 per 6-second clip).",
+    "community_comments": []
+  },
+  {
+    "model_name": "MiniMax Video 01",
+    "provider": "MiniMax (via fal.ai)",
+    "release_date": "2025-07-22",
+    "modality": "video",
+    "context_window": null,
+    "parameters": "not specified",
+    "model_type": "media",
+    "performance": {
+      "swe_bench_verified": null,
+      "livecodebench": null,
+      "aime_2025": null,
+      "math500": null,
+      "mmlu": null,
+      "intelligence_index": null,
+      "humanity_last_exam": null,
+      "gpqa": null
+    },
+    "price": {
+      "input_per_million_tokens": null,
+      "output_per_million_tokens": null
+    },
+    "notes": "720p image-to-video model supporting camera instructions via bracket tags; produces 6-second clips; cost around $0.50 per video.",
+    "community_comments": []
+  }
+]
