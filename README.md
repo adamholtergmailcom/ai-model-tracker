@@ -2,6 +2,20 @@
 
 A self-updating dashboard that tracks AI model releases from OpenRouter and fal.ai, automatically enriches data via the Perplexity API, and publishes updates to GitHub Pages.
 
+## 🚀 Live Dashboard
+
+**The dashboard is now live and publicly accessible at:**
+**https://adamholtergmailcom.github.io/ai-model-tracker/**
+
+You can embed this URL in an iframe on any website:
+```html
+<iframe src="https://adamholtergmailcom.github.io/ai-model-tracker/" 
+        width="100%" 
+        height="800" 
+        frameborder="0">
+</iframe>
+```
+
 ## Features
 
 - **Automated Discovery**: Monitors OpenRouter API and fal.ai for new model releases
@@ -23,45 +37,69 @@ ai-model-tracker/
 │   ├── app.py             # Simple Flask server to serve dashboard and expose JSON
 │   ├── update_models.py   # Daily update script: checks for new models and updates JSON
 │   └── requirements.txt   # Python dependencies
+├── deploy.sh              # Automated deployment script
 ├── README.md              # This file
 └── PROJECT_PLAN.md        # Detailed implementation plan
 ```
 
 ## Quick Start
 
-### 1. Clone and Setup
+### 1. Local Development
 
 ```bash
-git clone https://github.com/yourusername/ai-model-tracker.git
+# Clone the repository
+git clone https://github.com/adamholtergmailcom/ai-model-tracker.git
 cd ai-model-tracker
 
-# Create Python virtual environment
-python3 -m venv venv
+# Set up Python environment
+cd server
+python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
 
-# Install dependencies
-pip install -r server/requirements.txt
+# Set environment variables
+export PERPLEXITY_API_KEY="your_perplexity_api_key_here"
+export GITHUB_TOKEN="your_github_token_here"
+
+# Run local server
+python app.py
 ```
 
-### 2. Configure Environment Variables
+### 2. Automated Daily Updates
 
+To set up daily automated updates:
+
+1. **Set up environment variables** (add to your shell profile):
 ```bash
-export PERPLEXITY_API_KEY="your-perplexity-api-key"
-export GITHUB_TOKEN="your-github-personal-access-token"
+export PERPLEXITY_API_KEY="your_perplexity_api_key_here"
+export GITHUB_TOKEN="your_github_token_here"
 ```
 
-### 3. Run Local Development Server
-
+2. **Add to crontab** (runs daily at 9 AM):
 ```bash
-python server/app.py
+# Edit crontab
+crontab -e
+
+# Add this line (adjust path as needed)
+0 9 * * * /Users/adam/Downloads/ModelReporting/deploy.sh
 ```
 
-Open http://localhost:5000 to view the dashboard.
-
-### 4. Test Update Script
-
+3. **Test the update script**:
 ```bash
+./deploy.sh
+```
+
+### 3. Manual Updates
+
+You can also run updates manually:
+```bash
+# Update model data
 python server/update_models.py
+
+# Commit and push changes
+git add data/models.json
+git commit -m "Update model data"
+git push origin main
 ```
 
 ## Environment Variables
@@ -119,67 +157,21 @@ Each model entry in `data/models.json` follows this structure:
 - Sortable columns and search functionality
 - Truncated notes with full details on hover
 
-## Automation
-
-### Daily Updates
-
-The system automatically:
-1. Queries OpenRouter API for new models
-2. Scrapes fal.ai for generative media models
-3. Enriches new models via Perplexity API
-4. Updates `data/models.json`
-5. Commits and pushes changes to GitHub
-6. GitHub Pages automatically rebuilds the site
-
-### Cron Job Setup
-
-Add to your crontab (`crontab -e`):
-
-```bash
-# Run daily at 6 AM
-0 6 * * * cd /path/to/ai-model-tracker && /path/to/venv/bin/python server/update_models.py >> update.log 2>&1
-```
-
-## GitHub Pages Deployment
-
-### 1. Create Repository
-
-```bash
-git init
-git remote add origin https://github.com/yourusername/ai-model-tracker.git
-git add .
-git commit -m "Initial commit"
-git push -u origin main
-```
-
-### 2. Enable GitHub Pages
-
-1. Go to repository Settings
-2. Navigate to Pages section
-3. Set source to "Deploy from a branch"
-4. Select `main` branch and `/public` folder
-5. Save settings
-
-Your dashboard will be available at: `https://yourusername.github.io/ai-model-tracker/`
-
 ## API Integration Details
 
 ### OpenRouter API
-
 ```python
 # Fetches current model list
 GET https://openrouter.ai/api/v1/models
 ```
 
 ### Perplexity API
-
 ```python
 # Enriches model data with structured information
 POST https://api.perplexity.ai/chat/completions
 ```
 
 ### Fal.ai Discovery
-
 Currently uses web scraping since no public API is available. Monitors:
 - Main models page
 - Blog announcements
@@ -188,7 +180,6 @@ Currently uses web scraping since no public API is available. Monitors:
 ## Development
 
 ### Local Testing
-
 ```bash
 # Start Flask server
 python server/app.py
@@ -201,9 +192,7 @@ tail -f update.log
 ```
 
 ### Adding New Data Sources
-
 To add new model providers:
-
 1. Create discovery function in `update_models.py`
 2. Add to `discovered` set in `update_models()`
 3. Update Perplexity prompt if needed
@@ -212,26 +201,19 @@ To add new model providers:
 ## Troubleshooting
 
 ### Common Issues
-
-**Dashboard not loading**: Check that Flask server is running and files are in correct directories
-
-**API errors**: Verify environment variables are set correctly
-
-**GitHub push fails**: Ensure PAT has proper permissions and repository exists
-
-**Cron job not running**: Check cron logs and file permissions
+- **Dashboard not loading**: Check that GitHub Pages is enabled and files are in correct directories
+- **API errors**: Verify environment variables are set correctly
+- **GitHub push fails**: Ensure PAT has proper permissions and repository exists
+- **Cron job not running**: Check cron logs and file permissions
 
 ### Debug Mode
-
 Enable debug logging:
-
 ```python
 import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
 ## Contributing
-
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
@@ -239,11 +221,9 @@ logging.basicConfig(level=logging.DEBUG)
 5. Submit a pull request
 
 ## License
-
 MIT License - see LICENSE file for details
 
 ## Acknowledgments
-
 - Data sources: OpenRouter, fal.ai, Perplexity AI
 - Community insights: Reddit, ArtificialAnalysis.ai, LMArena
 - UI Framework: Tailwind CSS, Chart.js
